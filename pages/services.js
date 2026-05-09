@@ -12,7 +12,6 @@ export function renderServices() {
     ['🔗', 'API Development', 'Robust, secure, and well-documented APIs that power seamless integrations and data flow.'],
     ['🗄️', 'Database Management', 'Optimized database design, administration, and scaling for high-availability data systems.'],
     ['🔒', 'Authentication & Security', 'Enterprise-grade security solutions including SSO, MFA, encryption, and compliance frameworks.'],
-    ['📡', 'IoT Solutions', 'Connected device ecosystems with real-time monitoring, analytics, and intelligent edge computing.'],
     ['👁️', 'Computer Vision Solutions', 'Advanced image and video analysis powered by deep learning for automated visual intelligence.'],
     ['📄', 'OCR & Document Processing', 'Intelligent document extraction, classification, and processing that eliminates manual data entry.'],
     ['🏢', 'ERP/CRM Development', 'Comprehensive enterprise resource planning and customer relationship management systems.'],
