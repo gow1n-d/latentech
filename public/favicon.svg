@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FF87"/>
+      <stop offset="100%" stop-color="#FFD700"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00FF87" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#00FF87" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- Glow -->
+  <circle cx="32" cy="34" r="22" fill="url(#glow)"/>
+  <!-- Lantern top ring -->
+  <circle cx="32" cy="12" r="3" fill="none" stroke="url(#g)" stroke-width="1.5"/>
+  <!-- Lantern handle -->
+  <line x1="32" y1="15" x2="32" y2="19" stroke="url(#g)" stroke-width="1.5" stroke-linecap="round"/>
+  <!-- Lantern cap -->
+  <path d="M22 19 L42 19 L39 23 L25 23 Z" fill="none" stroke="url(#g)" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Lantern body -->
+  <path d="M25 23 L23 47 L41 47 L39 23" fill="none" stroke="url(#g)" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Lantern base -->
+  <path d="M21 47 L43 47 L42 51 L22 51 Z" fill="none" stroke="url(#g)" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Inner light / circuit nodes -->
+  <circle cx="32" cy="35" r="4" fill="#00FF87" opacity="0.8"/>
+  <circle cx="32" cy="35" r="2" fill="#fff" opacity="0.9"/>
+  <!-- Circuit lines radiating from center -->
+  <line x1="36" y1="35" x2="43" y2="32" stroke="#00FF87" stroke-width="1" opacity="0.6"/>
+  <circle cx="43" cy="32" r="1.5" fill="#00FF87" opacity="0.6"/>
+  <line x1="28" y1="35" x2="21" y2="32" stroke="#00FF87" stroke-width="1" opacity="0.6"/>
+  <circle cx="21" cy="32" r="1.5" fill="#00FF87" opacity="0.6"/>
+  <line x1="34" y1="31" x2="38" y2="26" stroke="#00FF87" stroke-width="1" opacity="0.5"/>
+  <circle cx="38" cy="26" r="1.2" fill="#00FF87" opacity="0.5"/>
+  <line x1="30" y1="31" x2="26" y2="26" stroke="#00FF87" stroke-width="1" opacity="0.5"/>
+  <circle cx="26" cy="26" r="1.2" fill="#00FF87" opacity="0.5"/>
+  <line x1="34" y1="39" x2="38" y2="43" stroke="#00FF87" stroke-width="1" opacity="0.5"/>
+  <circle cx="38" cy="43" r="1.2" fill="#00FF87" opacity="0.5"/>
+  <line x1="30" y1="39" x2="26" y2="43" stroke="#00FF87" stroke-width="1" opacity="0.5"/>
+  <circle cx="26" cy="43" r="1.2" fill="#00FF87" opacity="0.5"/>
+</svg>
