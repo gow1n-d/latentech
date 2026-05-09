@@ -15,7 +15,7 @@ export function renderContact() {
           <div class="section-label">Contact Form</div>
           <h2 class="section-title" style="font-size:1.8rem">Send Us a Message</h2>
           <form id="contactForm" style="margin-top:2rem">
-            <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY"/>
+            <input type="hidden" name="access_key" value="ffa1d6ed-8d85-4488-b38e-cdbcbef145f4"/>
             <input type="hidden" name="subject" value="New Contact Form Submission - LaternTech"/>
             <input type="hidden" name="from_name" value="LaternTech Website"/>
             <div class="grid-2">
