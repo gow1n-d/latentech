@@ -2,6 +2,7 @@ import './style.css';
 import { renderHome } from './pages/home.js';
 import { renderAbout } from './pages/about.js';
 import { renderSolutions } from './pages/solutions.js';
+import { renderServices } from './pages/services.js';
 import { renderIndustries } from './pages/industries.js';
 import { renderProducts } from './pages/products.js';
 import { renderInnovation } from './pages/innovation.js';
@@ -12,6 +13,7 @@ const pages = {
   home: renderHome,
   about: renderAbout,
   solutions: renderSolutions,
+  services: renderServices,
   industries: renderIndustries,
   products: renderProducts,
   innovation: renderInnovation,
