@@ -36,7 +36,7 @@ export function renderContact() {
           <div style="margin-top:2rem">
             <div class="glass-card" style="margin-bottom:1.5rem">
               <h4 style="font-size:0.95rem;font-weight:600;margin-bottom:0.5rem">📧 Email</h4>
-              <p style="color:var(--green)">latentech001@gmail.com</p>
+              <p style="color:var(--green)">laterntech@gmail.com</p>
             </div>
             <div class="glass-card" style="margin-bottom:1.5rem">
               <h4 style="font-size:0.95rem;font-weight:600;margin-bottom:0.5rem">📞 Phone</h4>
