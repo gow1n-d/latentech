@@ -1,12 +1,17 @@
 export function renderInnovation() {
   return `
   <div class="page active" id="page-innovation">
-    <section class="hero" style="min-height:65vh">
+    <section class="hero" style="padding-top: 10rem; padding-bottom: 6rem;">
       <div class="hero-bg"></div>
-      <div class="hero-content">
-        <div class="hero-badge"><span class="dot"></span> Innovation & Vision</div>
-        <h1>Pioneering the Future of<br/><span class="gradient-text">Enterprise Technology</span></h1>
-        <p>We don't wait for the future — we build it. Our innovation labs are where tomorrow's breakthrough solutions are born today.</p>
+      <div class="hero-container" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap:4rem; align-items:center; max-width: 1200px; margin: 0 auto; position:relative; z-index:2; width: 100%;">
+        <div class="hero-text" style="text-align:left;">
+          <div class="hero-badge"><span class="dot"></span> Innovation & Vision</div>
+          <h1 style="text-align:left; margin-left:0; font-size: clamp(2.5rem, 5.5vw, 4rem);">Pioneering the Future of<br/><span class="gradient-text">Enterprise Technology</span></h1>
+          <p style="text-align:left; margin-left:0; max-width: 500px;">We don't wait for the future — we build it. Our innovation labs are where tomorrow's breakthrough solutions are born today.</p>
+        </div>
+        <div class="hero-image-wrapper reveal" style="display:flex; justify-content:center;">
+          <img src="/innovation_tech.png" alt="Innovation and Future Tech" style="width: 100%; max-width: 500px; height: auto; border-radius: 20px; filter: drop-shadow(0 30px 60px rgba(5,150,105,0.15));" />
+        </div>
       </div>
     </section>
     <section class="quote-section"><p class="quote-text reveal">"Every great enterprise begins with one bold decision."</p></section>

@@ -1,18 +1,40 @@
 export function renderHome() {
   return `
   <div class="page active" id="page-home">
-    <section class="hero">
+    <section class="hero" style="padding-top: 10rem;">
       <div class="hero-bg"></div>
       <div class="hero-grid"></div>
-      <div class="hero-content">
-        <div class="hero-badge"><span class="dot"></span> Next-Generation Enterprise Technology</div>
-        <h1>Engineering<br/><span class="gradient-text">Tomorrow's Enterprise</span></h1>
-        <p>Where vision meets execution, transformation begins. We architect intelligent solutions that redefine what's possible for ambitious enterprises worldwide.</p>
-        <div class="hero-buttons">
-          <a href="#consultation" data-nav="consultation" class="btn-primary">Begin Your Transformation →</a>
-          <a href="#solutions" data-nav="solutions" class="btn-secondary">Explore Solutions</a>
+      
+      <div class="hero-container" style="display:grid; grid-template-columns: 1fr 1fr; gap:4rem; align-items:center; max-width: 1200px; margin: 0 auto; position:relative; z-index:2; width: 100%;">
+        <div class="hero-text" style="text-align:left;">
+          <div class="hero-badge"><span class="dot"></span> Next-Generation Enterprise Technology</div>
+          <h1 style="text-align:left; margin-left:0; font-size: clamp(2.5rem, 6vw, 4.5rem);">Engineering<br/><span class="gradient-text">Tomorrow's Enterprise</span></h1>
+          <p style="text-align:left; margin-left:0; margin-right:auto; max-width: 500px;">Where vision meets execution, transformation begins. We architect intelligent solutions that redefine what's possible for ambitious enterprises worldwide.</p>
+          <div class="hero-buttons" style="justify-content:flex-start;">
+            <a href="#consultation" data-nav="consultation" class="btn-primary">Begin Your Transformation →</a>
+            <a href="#solutions" data-nav="solutions" class="btn-secondary">Explore Solutions</a>
+          </div>
+        </div>
+        
+        <div class="hero-image-wrapper reveal" style="display:flex; justify-content:center;">
+          <img src="/hero_illustration.png" alt="Enterprise Technology" style="width: 100%; max-width: 500px; height: auto; border-radius: 20px; filter: drop-shadow(0 30px 60px rgba(5,150,105,0.15)); animation: floatImg 8s ease-in-out infinite;" />
         </div>
       </div>
+      
+      <style>
+        @keyframes floatImg {
+          0% { transform: translateY(0px) rotate(-1deg); }
+          50% { transform: translateY(-20px) rotate(1deg); }
+          100% { transform: translateY(0px) rotate(-1deg); }
+        }
+        @media (max-width: 960px) {
+          .hero-container { grid-template-columns: 1fr !important; text-align: center !important; }
+          .hero-text { margin: 0 auto; text-align: center !important; }
+          .hero-text h1, .hero-text p { text-align: center !important; margin-left: auto !important; margin-right: auto !important; }
+          .hero-buttons { justify-content: center !important; }
+          .hero-image-wrapper { margin-top: 2rem; }
+        }
+      </style>
     </section>
 
     <div class="marquee">

@@ -1,12 +1,17 @@
 export function renderAbout() {
   return `
   <div class="page active" id="page-about">
-    <section class="hero" style="min-height:70vh">
+    <section class="hero" style="padding-top: 10rem; padding-bottom: 6rem;">
       <div class="hero-bg"></div>
-      <div class="hero-content">
-        <div class="hero-badge"><span class="dot"></span> Our Story</div>
-        <h1>Born From a Vision to<br/><span class="gradient-text">Redefine Enterprise</span></h1>
-        <p>LaternTech was founded on a singular belief: that technology, when intelligently applied, can transform any business into an industry leader.</p>
+      <div class="hero-container" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap:4rem; align-items:center; max-width: 1200px; margin: 0 auto; position:relative; z-index:2; width: 100%;">
+        <div class="hero-text" style="text-align:left;">
+          <div class="hero-badge"><span class="dot"></span> Our Story</div>
+          <h1 style="text-align:left; margin-left:0; font-size: clamp(2.5rem, 6vw, 4.5rem);">Born From a Vision to<br/><span class="gradient-text">Redefine Enterprise</span></h1>
+          <p style="text-align:left; margin-left:0; max-width: 500px;">LaternTech was founded on a singular belief: that technology, when intelligently applied, can transform any business into an industry leader.</p>
+        </div>
+        <div class="hero-image-wrapper reveal" style="display:flex; justify-content:center;">
+          <img src="/about_tech.png" alt="Enterprise Technology" style="width: 100%; max-width: 500px; height: auto; border-radius: 20px; filter: drop-shadow(0 30px 60px rgba(5,150,105,0.15));" />
+        </div>
       </div>
     </section>
     <section class="quote-section"><p class="quote-text reveal">"Where vision meets execution, transformation begins."</p></section>

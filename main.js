@@ -41,8 +41,6 @@ function navigate(page) {
     });
     updateActiveNav(page);
     initRevealAnimations();
-    createParticles();
-    createOrbs();
     initForms();
     animateCounters();
   }, 300);
@@ -113,9 +111,9 @@ function createOrbs() {
   if (!hero) return;
   hero.querySelectorAll('.orb').forEach(o => o.remove());
   const orbs = [
-    { color: 'rgba(0,255,135,0.08)', size: 300, top: '20%', left: '10%' },
-    { color: 'rgba(255,215,0,0.06)', size: 250, top: '60%', left: '75%' },
-    { color: 'rgba(255,77,109,0.05)', size: 200, top: '40%', left: '50%' },
+    { color: 'rgba(5,150,105,0.05)', size: 300, top: '20%', left: '10%' },
+    { color: 'rgba(217,119,6,0.04)', size: 250, top: '60%', left: '75%' },
+    { color: 'rgba(225,29,72,0.03)', size: 200, top: '40%', left: '50%' },
   ];
   orbs.forEach((o, i) => {
     const el = document.createElement('div');
@@ -200,7 +198,7 @@ function initForms() {
 
 // Cursor glow effect
 const glow = document.createElement('div');
-glow.style.cssText = 'position:fixed;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(0,255,135,0.04),transparent 70%);pointer-events:none;z-index:0;transform:translate(-50%,-50%);transition:left 0.3s ease,top 0.3s ease';
+glow.style.cssText = 'position:fixed;width:400px;height:400px;border-radius:50%;background:radial-gradient(circle,rgba(5,150,105,0.06),transparent 70%);pointer-events:none;z-index:0;transform:translate(-50%,-50%);transition:left 0.3s ease,top 0.3s ease';
 document.body.appendChild(glow);
 document.addEventListener('mousemove', (e) => {
   glow.style.left = e.clientX + 'px';

@@ -11,12 +11,17 @@ export function renderSolutions() {
   ];
   return `
   <div class="page active" id="page-solutions">
-    <section class="hero" style="min-height:65vh">
+    <section class="hero" style="padding-top: 10rem; padding-bottom: 6rem;">
       <div class="hero-bg"></div>
-      <div class="hero-content">
-        <div class="hero-badge"><span class="dot"></span> Our Solutions</div>
-        <h1>Solutions Engineered for<br/><span class="gradient-text">Enterprise Scale</span></h1>
-        <p>Technology is powerful. Intelligent execution makes it unstoppable. Discover how our solutions transform ambitious enterprises into industry leaders.</p>
+      <div class="hero-container" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap:4rem; align-items:center; max-width: 1200px; margin: 0 auto; position:relative; z-index:2; width: 100%;">
+        <div class="hero-text" style="text-align:left;">
+          <div class="hero-badge"><span class="dot"></span> Our Solutions</div>
+          <h1 style="text-align:left; margin-left:0; font-size: clamp(2.5rem, 5.5vw, 4rem);">Solutions Engineered for<br/><span class="gradient-text">Enterprise Scale</span></h1>
+          <p style="text-align:left; margin-left:0; max-width: 500px;">Technology is powerful. Intelligent execution makes it unstoppable. Discover how our solutions transform ambitious enterprises into industry leaders.</p>
+        </div>
+        <div class="hero-image-wrapper reveal" style="display:flex; justify-content:center;">
+          <img src="/solutions_tech.png" alt="Enterprise Solutions" style="width: 100%; max-width: 500px; height: auto; border-radius: 20px; filter: drop-shadow(0 30px 60px rgba(217,119,6,0.15));" />
+        </div>
       </div>
     </section>
     <section class="quote-section"><p class="quote-text reveal">"Complex challenges create extraordinary innovation."</p></section>
