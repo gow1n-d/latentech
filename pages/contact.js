@@ -44,7 +44,7 @@ export function renderContact() {
             </div>
             <div class="glass-card" style="margin-bottom:1.5rem">
               <h4 style="font-size:0.95rem;font-weight:600;margin-bottom:0.5rem">💼 LinkedIn</h4>
-              <p><a href="https://www.linkedin.com/in/laterntech-undefined-4121a840a" style="color:var(--green); text-decoration:none;">Connect with LaternTech</a></p>
+              <p><a href="https://www.linkedin.com/in/laterntech-undefined-4121a840a" onclick="window.location.href=this.href; return false;" style="color:var(--green); text-decoration:none;">Connect with LaternTech</a></p>
             </div>
             <div class="glass-card">
               <h4 style="font-size:0.95rem;font-weight:600;margin-bottom:0.5rem">⏰ Business Hours</h4>
