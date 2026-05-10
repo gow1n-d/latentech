@@ -13,7 +13,7 @@ export function renderSolutions() {
   <div class="page active" id="page-solutions">
     <section class="hero" style="padding-top: 10rem; padding-bottom: 6rem;">
       <div class="hero-bg"></div>
-      <div class="hero-container" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap:4rem; align-items:center; max-width: 1200px; margin: 0 auto; position:relative; z-index:2; width: 100%;">
+      <div class="hero-container" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap:4rem; align-items:center; max-width: 1200px; margin: 0 auto; position:relative; z-index:2; width: 100%;">
         <div class="hero-text" style="text-align:left;">
           <div class="hero-badge"><span class="dot"></span> Our Solutions</div>
           <h1 style="text-align:left; margin-left:0; font-size: clamp(2.5rem, 5.5vw, 4rem);">Solutions Engineered for<br/><span class="gradient-text">Enterprise Scale</span></h1>

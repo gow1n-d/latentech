@@ -3,7 +3,7 @@ export function renderAbout() {
   <div class="page active" id="page-about">
     <section class="hero" style="padding-top: 10rem; padding-bottom: 6rem;">
       <div class="hero-bg"></div>
-      <div class="hero-container" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap:4rem; align-items:center; max-width: 1200px; margin: 0 auto; position:relative; z-index:2; width: 100%;">
+      <div class="hero-container" style="display:grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr)); gap:4rem; align-items:center; max-width: 1200px; margin: 0 auto; position:relative; z-index:2; width: 100%;">
         <div class="hero-text" style="text-align:left;">
           <div class="hero-badge"><span class="dot"></span> Our Story</div>
           <h1 style="text-align:left; margin-left:0; font-size: clamp(2.5rem, 6vw, 4.5rem);">Born From a Vision to<br/><span class="gradient-text">Redefine Enterprise</span></h1>

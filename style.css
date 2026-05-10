@@ -220,16 +220,16 @@ section{padding:8rem 6%;position:relative}
 @media(max-width:1024px){.grid-4{grid-template-columns:repeat(2,1fr)}.footer-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:768px){
   section{padding:5rem 6%}
-  .nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;flex-direction:column;justify-content:center;align-items:center;background:rgba(255,255,255,0.98);gap:2.5rem;backdrop-filter:blur(20px)}
+  .nav-links{display:none;position:fixed;top:0;left:0;right:0;bottom:0;flex-direction:column;justify-content:center;align-items:center;background:rgba(255,255,255,0.98);gap:2.5rem;backdrop-filter:blur(20px);padding: 2rem;overflow-y:auto}
   .nav-links.open{display:flex}
   .nav-toggle{display:flex}
   .grid-2,.grid-3,.grid-4{grid-template-columns:1fr}
-  .stats-bar{grid-template-columns:repeat(2,1fr)}
+  .stats-bar{grid-template-columns:1fr !important}
   .footer-grid{grid-template-columns:1fr}
   .footer-bottom{flex-direction:column;gap:1.5rem;text-align:center}
-  .hero h1{font-size:clamp(2.5rem,10vw,3.5rem)}
+  .hero h1{font-size:clamp(2rem,10vw,3.5rem) !important}
   .job-card{flex-direction:column;gap:1.5rem;align-items:flex-start}
-  .nav-logo-img{height:60px}
-  .navbar.scrolled .nav-logo-img{height:50px}
-  .footer-logo-img{height:90px}
+  .nav-logo-img{height:50px}
+  .navbar.scrolled .nav-logo-img{height:40px}
+  .footer-logo-img{height:70px}
 }
