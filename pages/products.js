@@ -14,7 +14,7 @@ export function renderProducts() {
     </section>
     <section>
       <div class="section-center reveal">
-        <div class="section-label">Featured Product</div>
+        <div class="section-label">Coming Soon</div>
         <h2 class="section-title">Social Automation</h2>
         <p class="section-subtitle" style="max-width: 800px;">A highly user-friendly tool that enables anyone to automate their social media simply by connecting their accounts. Built primarily for business professionals and product influencers, it makes managing and scaling your online presence effortless.</p>
       </div>
@@ -33,9 +33,9 @@ export function renderProducts() {
     </section>
     <section class="cta-section">
       <div class="cta-content reveal">
-        <h2>Ready to Automate<br/><span class="gradient-text">Your Socials?</span></h2>
-        <p>Take control of your social media presence and scale your influence with Social Automation.</p>
-        <a href="#consultation" data-nav="consultation" class="btn-primary">Get Started Today →</a>
+        <h2>Want Early Access to<br/><span class="gradient-text">Social Automation?</span></h2>
+        <p>Be among the first to take control of your social media presence and scale your influence. Get in touch for exclusive early access.</p>
+        <a href="#consultation" data-nav="consultation" class="btn-primary">Request Early Access →</a>
       </div>
     </section>
   </div>`;
