@@ -14,29 +14,28 @@ export function renderProducts() {
     </section>
     <section>
       <div class="section-center reveal">
-        <div class="section-label">Product Suite</div>
-        <h2 class="section-title">Coming Soon</h2>
-        <p class="section-subtitle">We are crafting next-generation AI-powered digital products that will redefine how enterprises operate. Stay tuned for groundbreaking launches.</p>
+        <div class="section-label">Featured Product</div>
+        <h2 class="section-title">Social Automation</h2>
+        <p class="section-subtitle" style="max-width: 800px;">A highly user-friendly tool that enables anyone to automate their social media simply by connecting their accounts. Built primarily for business professionals and product influencers, it makes managing and scaling your online presence effortless.</p>
       </div>
       <div class="grid-3" style="margin-top:3rem">
-        ${[['🤖','AI-Powered Solutions','Intelligent products that learn, adapt, and optimize your business operations autonomously.'],
-           ['📊','Data Intelligence','Transform raw data into strategic insights with our upcoming analytics platforms.'],
-           ['⚡','Smart Automation','End-to-end automation products that eliminate friction and accelerate growth.']
+        ${[['🔗','Seamless Integration','Easily link and control all your social media profiles just by connecting your accounts and IDs.'],
+           ['⏱️','Effortless Automation','Plan, schedule, and automate your posts to maintain a consistent online presence without the hassle.'],
+           ['📈','Built for Influencers','Designed specifically for business professionals and product influencers looking to scale their reach.']
         ].map(([icon,title,desc])=>`
-          <div class="glass-card reveal" style="text-align:center;border-style:dashed">
+          <div class="glass-card reveal" style="text-align:center;">
             <div style="font-size:2.5rem;margin-bottom:1.2rem">${icon}</div>
             <h3 style="font-family:var(--display);font-size:1.15rem;font-weight:700;margin-bottom:0.8rem">${title}</h3>
             <p style="font-size:0.9rem;color:var(--text2);line-height:1.7">${desc}</p>
-            <div style="margin-top:1.5rem;font-size:0.75rem;color:var(--green);font-weight:700;text-transform:uppercase;letter-spacing:2px">Coming Soon</div>
           </div>
         `).join('')}
       </div>
     </section>
     <section class="cta-section">
       <div class="cta-content reveal">
-        <h2>Want Early Access to<br/><span class="gradient-text">Our Products?</span></h2>
-        <p>Be the first to experience our AI-powered solutions. Get in touch for exclusive early access.</p>
-        <a href="#consultation" data-nav="consultation" class="btn-primary">Request Early Access →</a>
+        <h2>Ready to Automate<br/><span class="gradient-text">Your Socials?</span></h2>
+        <p>Take control of your social media presence and scale your influence with Social Automation.</p>
+        <a href="#consultation" data-nav="consultation" class="btn-primary">Get Started Today →</a>
       </div>
     </section>
   </div>`;
