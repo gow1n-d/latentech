@@ -46,6 +46,10 @@ export function renderContact() {
               <h4 style="font-size:0.95rem;font-weight:600;margin-bottom:0.5rem">💼 LinkedIn</h4>
               <p><a href="https://www.linkedin.com/in/laterntech-undefined-4121a840a" onclick="window.location.href=this.href; return false;" style="color:var(--green); text-decoration:none;">Connect with LaternTech</a></p>
             </div>
+            <div class="glass-card" style="margin-bottom:1.5rem">
+              <h4 style="font-size:0.95rem;font-weight:600;margin-bottom:0.5rem">🐦 Twitter / X</h4>
+              <p><a href="https://x.com/laterntech76944" onclick="window.location.href=this.href; return false;" style="color:var(--green); text-decoration:none;">Follow @laterntech76944</a></p>
+            </div>
             <div class="glass-card">
               <h4 style="font-size:0.95rem;font-weight:600;margin-bottom:0.5rem">⏰ Business Hours</h4>
               <p style="color:var(--text2)">24/7 Global Support · Enterprise clients receive dedicated account management</p>
