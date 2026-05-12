@@ -48,7 +48,7 @@ export function renderContact() {
             </div>
             <div class="glass-card" style="margin-bottom:1.5rem">
               <h4 style="font-size:0.95rem;font-weight:600;margin-bottom:0.5rem">🐦 Twitter / X</h4>
-              <p><a href="https://x.com/laterntech76944" onclick="window.location.href=this.href; return false;" style="color:var(--green); text-decoration:none;">Follow @laterntech76944</a></p>
+              <p><a href="https://x.com/laterntech76944" target="_blank" rel="noopener noreferrer" style="color:var(--green); text-decoration:none;">Follow @laterntech76944</a></p>
             </div>
             <div class="glass-card">
               <h4 style="font-size:0.95rem;font-weight:600;margin-bottom:0.5rem">⏰ Business Hours</h4>
