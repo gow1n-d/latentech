@@ -212,3 +212,17 @@ window.addEventListener('hashchange', () => {
 
 const initPage = window.location.hash.slice(1) || 'home';
 navigate(initPage);
+
+// Chatbot toggle logic
+const chatbotToggle = document.getElementById('chatbot-toggle');
+const chatbotWindow = document.getElementById('chatbot-window');
+const chatbotClose = document.getElementById('chatbot-close');
+
+if (chatbotToggle && chatbotWindow && chatbotClose) {
+  chatbotToggle.addEventListener('click', () => {
+    chatbotWindow.classList.toggle('hidden');
+  });
+  chatbotClose.addEventListener('click', () => {
+    chatbotWindow.classList.add('hidden');
+  });
+}
