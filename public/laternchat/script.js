@@ -5,19 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const chatForm = document.getElementById('chat-form');
     const chatMessages = document.getElementById('chat-messages');
     const newChatBtn = document.getElementById('new-chat-btn');
-    const uploadBtn = document.getElementById('upload-btn');
-    const fileInput = document.getElementById('file-input');
-    const attachmentPreview = document.getElementById('attachment-preview');
-    const attachmentName = document.getElementById('attachment-name');
-    const removeAttachmentBtn = document.getElementById('remove-attachment-btn');
+
 
     const systemPrompt = {
         role: "system",
         content: "You are LaternChat, the official AI assistant for LaternTech. LaternTech delivers premium enterprise technology solutions, AI-powered systems, automation, and digital transformation platforms. Our mission is to empower enterprises through intelligent innovation. We were founded by Gowind B M. We provide Custom Enterprise Software, AI-Powered Systems, Process Automation, Digital Transformation, Custom Digital Products, Productivity Ecosystems, Industry Solutions, and Scalable SaaS Platforms for industries like Healthcare, Finance, Manufacturing, Retail, Logistics, Education, Real Estate, and Energy. Core values: Innovation, Excellence, Integrity, Impact. Always be helpful, professional, and knowledgeable about LaternTech."
     };
     let conversationHistory = [systemPrompt];
-    let currentAttachmentText = null;
-    let currentAttachmentName = null;
+
 
     // Load saved settings
     const savedModel = localStorage.getItem('latern_chat_model');
@@ -44,65 +39,16 @@ document.addEventListener('DOMContentLoaded', () => {
     messageInput.addEventListener('keydown', function(e) {
         if (e.key === 'Enter' && !e.shiftKey) {
             e.preventDefault();
-            if (this.value.trim().length > 0 || currentAttachmentText) {
+            if (this.value.trim().length > 0) {
                 chatForm.dispatchEvent(new Event('submit'));
             }
         }
     });
 
-    // File upload logic
-    uploadBtn.addEventListener('click', () => {
-        fileInput.click();
-    });
 
-    fileInput.addEventListener('change', async (e) => {
-        const file = e.target.files[0];
-        if (!file) return;
-
-        // Show uploading state
-        attachmentName.textContent = `Uploading ${file.name}...`;
-        attachmentPreview.classList.remove('hidden');
-        sendBtn.setAttribute('disabled', 'true');
-
-        const formData = new FormData();
-        formData.append('file', file);
-
-        try {
-            const res = await fetch('/api/upload', {
-                method: 'POST',
-                body: formData
-            });
-
-            if (!res.ok) throw new Error('Upload failed');
-            
-            const data = await res.json();
-            currentAttachmentText = data.text;
-            currentAttachmentName = data.filename;
-            
-            attachmentName.textContent = currentAttachmentName;
-            sendBtn.removeAttribute('disabled');
-        } catch (error) {
-            alert('Error uploading file: ' + error.message);
-            removeAttachment();
-        }
-        
-        fileInput.value = ''; // Reset input
-    });
-
-    removeAttachmentBtn.addEventListener('click', removeAttachment);
-
-    function removeAttachment() {
-        currentAttachmentText = null;
-        currentAttachmentName = null;
-        attachmentPreview.classList.add('hidden');
-        if (messageInput.value.trim().length === 0) {
-            sendBtn.setAttribute('disabled', 'true');
-        }
-    }
 
     newChatBtn.addEventListener('click', () => {
         conversationHistory = [systemPrompt];
-        removeAttachment();
         chatMessages.innerHTML = `
             <div class="message assistant welcome-message">
                 <div class="avatar assistant-avatar">AI</div>
@@ -119,16 +65,10 @@ document.addEventListener('DOMContentLoaded', () => {
         const message = messageInput.value.trim();
         const model = modelSelect.value;
 
-        if (!message && !currentAttachmentText) return;
+        if (!message) return;
 
         let fullMessage = message;
         let displayMessage = message;
-
-        if (currentAttachmentText) {
-            displayMessage = `📎 **Attached:** ${currentAttachmentName}\n\n${message}`;
-            fullMessage = `CONTEXT FROM UPLOADED DOCUMENT "${currentAttachmentName}":\n\n${currentAttachmentText}\n\nUSER QUESTION:\n${message || "Analyze this document and summarize it."}`;
-            removeAttachment();
-        }
 
         // Add user message to UI
         appendMessage('user', displayMessage);
