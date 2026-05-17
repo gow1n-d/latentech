@@ -51,7 +51,7 @@ export function renderHome() {
 
     <section>
       <div class="section-center reveal">
-        <div class="section-label">Why LaternTech</div>
+        <div class="section-label">Why LatenTech</div>
         <h2 class="section-title">The Enterprise Technology<br/>Partner of Choice</h2>
         <p class="section-subtitle">We don't just deliver technology — we engineer strategic advantage. Every solution is purpose-built for measurable business transformation.</p>
       </div>

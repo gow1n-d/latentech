@@ -16,8 +16,8 @@ export function renderContact() {
           <h2 class="section-title" style="font-size:1.8rem">Send Us a Message</h2>
           <form id="contactForm" style="margin-top:2rem">
             <input type="hidden" name="access_key" value="ffa1d6ed-8d85-4488-b38e-cdbcbef145f4"/>
-            <input type="hidden" name="subject" value="New Contact Form Submission - LaternTech"/>
-            <input type="hidden" name="from_name" value="LaternTech Website"/>
+            <input type="hidden" name="subject" value="New Contact Form Submission - LatenTech"/>
+            <input type="hidden" name="from_name" value="LatenTech Website"/>
             <div class="grid-2">
               <div class="form-group"><label>Full Name</label><input type="text" name="name" placeholder="Your name" required/></div>
               <div class="form-group"><label>Email Address</label><input type="email" name="email" placeholder="you@company.com" required/></div>
@@ -36,7 +36,7 @@ export function renderContact() {
           <div style="margin-top:2rem">
             <div class="glass-card" style="margin-bottom:1.5rem">
               <h4 style="font-size:0.95rem;font-weight:600;margin-bottom:0.5rem">📧 Email</h4>
-              <p style="color:var(--green)">laterntech@gmail.com</p>
+              <p style="color:var(--green)">latentech@gmail.com</p>
             </div>
             <div class="glass-card" style="margin-bottom:1.5rem">
               <h4 style="font-size:0.95rem;font-weight:600;margin-bottom:0.5rem">📞 Phone</h4>
@@ -44,11 +44,11 @@ export function renderContact() {
             </div>
             <div class="glass-card" style="margin-bottom:1.5rem">
               <h4 style="font-size:0.95rem;font-weight:600;margin-bottom:0.5rem">💼 LinkedIn</h4>
-              <p><a href="https://www.linkedin.com/in/laterntech-undefined-4121a840a" target="_blank" rel="noopener noreferrer" style="color:var(--green); text-decoration:none;">Connect with LaternTech</a></p>
+              <p><a href="https://www.linkedin.com/in/latentech-undefined-4121a840a" target="_blank" rel="noopener noreferrer" style="color:var(--green); text-decoration:none;">Connect with LatenTech</a></p>
             </div>
             <div class="glass-card" style="margin-bottom:1.5rem">
               <h4 style="font-size:0.95rem;font-weight:600;margin-bottom:0.5rem">🐦 Twitter / X</h4>
-              <p><a href="https://x.com/laterntech76944" target="_blank" rel="noopener noreferrer" style="color:var(--green); text-decoration:none;">Follow @laterntech76944</a></p>
+              <p><a href="https://x.com/latentech76944" target="_blank" rel="noopener noreferrer" style="color:var(--green); text-decoration:none;">Follow @latentech76944</a></p>
             </div>
             <div class="glass-card">
               <h4 style="font-size:0.95rem;font-weight:600;margin-bottom:0.5rem">⏰ Business Hours</h4>

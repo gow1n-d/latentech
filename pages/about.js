@@ -7,7 +7,7 @@ export function renderAbout() {
         <div class="hero-text" style="text-align:left;">
           <div class="hero-badge"><span class="dot"></span> Our Story</div>
           <h1 style="text-align:left; margin-left:0; font-size: clamp(2.5rem, 6vw, 4.5rem);">Born From a Vision to<br/><span class="gradient-text">Redefine Enterprise</span></h1>
-          <p style="text-align:left; margin-left:0; max-width: 500px;">LaternTech was founded on a singular belief: that technology, when intelligently applied, can transform any business into an industry leader.</p>
+          <p style="text-align:left; margin-left:0; max-width: 500px;">LatenTech was founded on a singular belief: that technology, when intelligently applied, can transform any business into an industry leader.</p>
         </div>
         <div class="hero-image-wrapper reveal" style="display:flex; justify-content:center;">
           <img src="/about_tech.png" alt="Enterprise Technology" style="width: 100%; max-width: 500px; height: auto; border-radius: 20px; filter: drop-shadow(0 30px 60px rgba(5,150,105,0.15));" />
@@ -40,7 +40,7 @@ export function renderAbout() {
           <div style="width:90px;height:90px;border-radius:50%;background:linear-gradient(135deg,var(--green),var(--gold));display:flex;align-items:center;justify-content:center;margin:0 auto 1.5rem;font-size:2rem;font-weight:800;color:#0D0D0D">G</div>
           <h3 style="font-family:var(--display);font-size:1.4rem;font-weight:700;margin-bottom:0.3rem">Gowind B M</h3>
           <p style="color:var(--green);font-size:0.85rem;font-weight:600;text-transform:uppercase;letter-spacing:2px;margin-bottom:1rem">Founder & CEO</p>
-          <p style="color:var(--text2);font-size:0.9rem;line-height:1.8">Visionary technologist and entrepreneur committed to empowering enterprises through intelligent innovation. Leading LaternTech to illuminate the future of business technology.</p>
+          <p style="color:var(--text2);font-size:0.9rem;line-height:1.8">Visionary technologist and entrepreneur committed to empowering enterprises through intelligent innovation. Leading LatenTech to illuminate the future of business technology.</p>
         </div>
       </div>
     </section>
