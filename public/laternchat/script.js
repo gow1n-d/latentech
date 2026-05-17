@@ -84,7 +84,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             const isLocal = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
-            const apiUrl = isLocal ? 'http://localhost:3000/api/chat' : '/api/chat';
+            // IMPORTANT: Update this URL to your deployed backend URL on Vercel/Render!
+            const PROD_BACKEND_URL = 'https://latentech-backend.vercel.app'; 
+            
+            const apiUrl = isLocal ? 'http://localhost:3000/api/chat' : `${PROD_BACKEND_URL}/api/chat`;
             const response = await fetch(apiUrl, {
                 method: 'POST',
                 headers: {

@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "concurrently \"vite\" \"node api/index.js\"",
+    "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
@@ -13,11 +13,5 @@
     "typescript": "~6.0.2",
     "vite": "^8.0.10"
   },
-  "dependencies": {
-    "cors": "^2.8.6",
-    "dotenv": "^17.4.2",
-    "express": "^5.2.1",
-    "multer": "^2.1.1",
-    "pdf-parse": "^2.4.5"
-  }
+  "dependencies": {}
 }
