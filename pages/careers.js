@@ -5,7 +5,7 @@ export function renderCareers() {
       <div class="hero-bg"></div>
       <div class="hero-content">
         <div class="hero-badge"><span class="dot"></span> Join Our Team</div>
-        <h1>Shape the Future<br/><span class="gradient-text">with LatenTech</span></h1>
+        <h1>Shape the Future<br/><span class="gradient-text">with LaternTech</span></h1>
         <p>We're building the most talented team in enterprise technology. If you're driven by innovation and fueled by ambition, you belong here.</p>
       </div>
     </section>

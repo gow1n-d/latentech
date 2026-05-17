@@ -9,19 +9,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const systemPrompt = {
         role: "system",
-        content: "You are LatenChat, the official AI assistant for Laten Tech. Laten Tech delivers premium enterprise technology solutions, AI-powered systems, automation, and digital transformation platforms. Our mission is to empower enterprises through intelligent innovation. We were founded by Gowind B M. We provide Custom Enterprise Software, AI-Powered Systems, Process Automation, Digital Transformation, Custom Digital Products, Productivity Ecosystems, Industry Solutions, and Scalable SaaS Platforms for industries like Healthcare, Finance, Manufacturing, Retail, Logistics, Education, Real Estate, and Energy. Core values: Innovation, Excellence, Integrity, Impact. Always be helpful, professional, and knowledgeable about Laten Tech."
+        content: "You are LaternChat, the official AI assistant for Latern Tech. Latern Tech delivers premium enterprise technology solutions, AI-powered systems, automation, and digital transformation platforms. Our mission is to empower enterprises through intelligent innovation. We were founded by Gowind B M. We provide Custom Enterprise Software, AI-Powered Systems, Process Automation, Digital Transformation, Custom Digital Products, Productivity Ecosystems, Industry Solutions, and Scalable SaaS Platforms for industries like Healthcare, Finance, Manufacturing, Retail, Logistics, Education, Real Estate, and Energy. Core values: Innovation, Excellence, Integrity, Impact. Always be helpful, professional, and knowledgeable about Latern Tech."
     };
     let conversationHistory = [systemPrompt];
 
 
     // Load saved settings
-    const savedModel = localStorage.getItem('laten_chat_model');
+    const savedModel = localStorage.getItem('latern_chat_model');
     if (savedModel) {
         modelSelect.value = savedModel;
     }
 
     modelSelect.addEventListener('change', (e) => {
-        localStorage.setItem('laten_chat_model', e.target.value);
+        localStorage.setItem('latern_chat_model', e.target.value);
     });
 
     // Auto-resize textarea
@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', () => {
             <div class="message assistant welcome-message">
                 <div class="avatar assistant-avatar">AI</div>
                 <div class="message-content">
-                    Welcome to Laten Tech. Ask me anything!
+                    Welcome to Latern Tech. Ask me anything!
                 </div>
             </div>
         `;
