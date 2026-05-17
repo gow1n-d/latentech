@@ -31,7 +31,7 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);overflow-x:h
 /* NAV */
 .navbar{position:fixed;top:0;left:0;right:0;z-index:1000;padding:1.2rem 5%;display:flex;align-items:center;justify-content:space-between;background:transparent;transition:var(--t)}
 .navbar.scrolled{background:rgba(255,255,255,0.92);backdrop-filter:blur(20px);border-bottom:1px solid var(--border);padding:0.8rem 5%;box-shadow:0 4px 20px rgba(0,0,0,0.03)}
-.nav-logo{text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem;flex-shrink:0}
+.nav-logo{text-decoration:none;display:inline-flex;align-items:center;gap:0.5rem;flex-shrink:0;position:relative;z-index:1001}
 .nav-logo-img{height:90px;width:auto;object-fit:contain;transition:var(--t);border-radius:12px;filter:drop-shadow(0 4px 10px rgba(0,0,0,0.15))}
 .nav-logo:hover .nav-logo-img{filter:drop-shadow(0 8px 20px rgba(0,0,0,0.2)) brightness(1.05);transform:scale(1.05) translateY(-2px)}
 .navbar.scrolled .nav-logo-img{height:70px}
@@ -46,8 +46,11 @@ body{font-family:var(--font);background:var(--bg);color:var(--text);overflow-x:h
 .nav-cta{background:var(--text)!important;color:#FFFFFF!important;padding:0.7rem 1.8rem!important;border-radius:50px!important;font-weight:700!important;font-size:0.8rem!important;letter-spacing:0.5px!important;transition:var(--t)!important;box-shadow:0 4px 15px rgba(0,0,0,0.1)!important}
 .nav-cta::after{display:none!important}
 .nav-cta:hover{transform:scale(1.05) translateY(-2px)!important;background:var(--green)!important;box-shadow:0 10px 25px var(--green-glow)!important}
-.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none}
+.nav-toggle{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;position:relative;z-index:1001}
 .nav-toggle span{width:22px;height:2px;background:var(--text);transition:var(--t)}
+.nav-toggle.open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+.nav-toggle.open span:nth-child(2){opacity:0}
+.nav-toggle.open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
 
 /* PAGES */
 .page{display:none;min-height:100vh}.page.active{display:block}

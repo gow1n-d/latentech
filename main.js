@@ -58,11 +58,14 @@ document.addEventListener('click', (e) => {
     e.preventDefault();
     navigate(link.dataset.nav);
     document.getElementById('navLinks').classList.remove('open');
+    const navToggle = document.getElementById('navToggle');
+    if (navToggle) navToggle.classList.remove('open');
   }
 });
 
-document.getElementById('navToggle').addEventListener('click', () => {
+document.getElementById('navToggle').addEventListener('click', function() {
   document.getElementById('navLinks').classList.toggle('open');
+  this.classList.toggle('open');
 });
 
 window.addEventListener('scroll', () => {
