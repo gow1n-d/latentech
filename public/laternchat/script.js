@@ -111,7 +111,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 } catch(e) {
                     errorData = {};
                 }
-                throw new Error(errorData.error || errorData.detail || errorData.message || `API request failed with status ${response.status}`);
+                
+                let errStr = `API request failed with status ${response.status}`;
+                if (errorData.detail) errStr = typeof errorData.detail === 'string' ? errorData.detail : JSON.stringify(errorData.detail);
+                else if (errorData.message) errStr = typeof errorData.message === 'string' ? errorData.message : JSON.stringify(errorData.message);
+                else if (errorData.error) errStr = typeof errorData.error === 'string' ? errorData.error : JSON.stringify(errorData.error);
+                else if (Object.keys(errorData).length > 0) errStr = JSON.stringify(errorData);
+                
+                throw new Error(errStr);
             }
 
             const data = await response.json();
