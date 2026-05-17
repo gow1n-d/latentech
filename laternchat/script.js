@@ -105,8 +105,13 @@ document.addEventListener('DOMContentLoaded', () => {
             removeLoading(loadingId);
 
             if (!response.ok) {
-                const errorData = await response.json();
-                throw new Error(errorData.detail || errorData.message || 'API request failed');
+                let errorData;
+                try {
+                    errorData = await response.json();
+                } catch(e) {
+                    errorData = {};
+                }
+                throw new Error(errorData.error || errorData.detail || errorData.message || `API request failed with status ${response.status}`);
             }
 
             const data = await response.json();
